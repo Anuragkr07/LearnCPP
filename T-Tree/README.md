@@ -43,3 +43,34 @@ Vertical order traversal is
 10 25
 15
 ```
+
+
+
+
+
+## [Pre Order Traversal](T-Tree\T-TreeTraversals\verticalTraversal.cpp)
+#### **Table of Contents -**
+- Introduction
+- Algorithm
+- Complexity
+- Input/Output
+
+#### **Introduction -**
+In preorder traversal, first, the root node is visited, then the left sub-tree, and after that right sub-tree is visited. The process of preorder traversal can be represented as -
+```
+Root -> Left -> Right
+```
+<br></br>
+<img src = "https://user-images.githubusercontent.com/86841935/170809253-89072cd1-fa40-4fde-86dc-a0b5dff797fe.png"/>
+
+#### **Algorithm -** 
+1. A binary tree is constructed on the basis of the user input (number of nodes, inorder traversal, preorder traversal)<br>
+2. Check if root is NULL. Return if true.<br>
+3. Create a stack and push the root element into it.<br>
+4. Print the topmost element and push the right and then the left element into it . 
+
+#### **Complexity -**
+Time Complexity - O(N), where N is the no. of total nodes.
+Space Complexity - O(H)    where H is the height of the tree
+
+
